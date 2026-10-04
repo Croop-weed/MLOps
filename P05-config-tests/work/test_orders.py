@@ -9,7 +9,7 @@ def test_minutes_per_km_simple():
     assert minutes_per_km(30, 10) == 3.0
 
 
-def test_minutes_per_km_rejects_zero_distance():
+def test_minutes_per_km_rejects_zero_distance():    
     with pytest.raises(ValueError):
         minutes_per_km(30, 0)
 
